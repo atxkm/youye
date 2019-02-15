@@ -1,21 +1,21 @@
 (function(doc, win) {
   isIE();
-  var docEl = doc.documentElement,
-    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-    recalc = function() {
-      var clientWidth = docEl.clientWidth > 750 ? 375 : docEl.clientWidth;
-      if (!clientWidth) {
-        return
-      }
-      docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-    };
-  if (docEl.clientHeight < 504) {
-    docEl.style.height = 504 + 'px';
-  }
-  recalc();
-  if (!doc.addEventListener) return;
-  win.addEventListener(resizeEvt, recalc, false);
-  doc.addEventListener('DOMContentLoaded', recalc, false);
+  // var docEl = doc.documentElement,
+  //   resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+  //   recalc = function() {
+  //     var clientWidth = docEl.clientWidth > 750 ? 375 : docEl.clientWidth;
+  //     if (!clientWidth) {
+  //       return
+  //     }
+  //     docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+  //   };
+  // if (docEl.clientHeight < 504) {
+  //   docEl.style.height = 504 + 'px';
+  // }
+  // recalc();
+  // if (!doc.addEventListener) return;
+  // win.addEventListener(resizeEvt, recalc, false);
+  // doc.addEventListener('DOMContentLoaded', recalc, false);
 
   function isIE() {
     var userAgent = navigator.userAgent;
