@@ -80,7 +80,7 @@ header {
     }
 }
 
-.about .about {
+.about .about, .platform .platform, .apply .apply {
     border-bottom: 2px solid #1163B7;
     a {
         color: #1566B8;
@@ -114,7 +114,7 @@ header {
                 line-height: 83px;
                 font-size: 28px;
                 letter-spacing: 2.36px;
-                
+
                 a {
                     display: block;
                     width: 100%;
