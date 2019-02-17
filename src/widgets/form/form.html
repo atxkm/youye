@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./form.scss">
 
-<div class="form box">
+<div class="form box" id="form">
   <div class="desc">请填写下面信息索要</div>
   <h2>公司介绍，产品和服务介绍</h2>
   <ul>
@@ -10,7 +10,7 @@
     </li>
     <li>
       <div class="title">手机：</div>
-      <div><input type="text" name="mobile" placeholder="请输入您的手机"></div>
+      <div><input type="text" name="mobile" placeholder="请输入您的手机" maxlength="11"></div>
     </li>
     <li>
       <div class="title">邮箱：</div>
@@ -22,6 +22,6 @@
     </li>
   </ul>
   <div>
-    <button>发送</button>
+    <button id="sendBtn">发送</button>
   </div>
 </div>

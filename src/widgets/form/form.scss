@@ -58,7 +58,7 @@
         cursor: pointer;
 
         &:hover {
-            background: #0062BD;
+            background-color: #0062BD;
             color: #ffffff;
         }
     }
@@ -129,6 +129,16 @@
             font-size: 26px;
             color: #1163B7;
             cursor: pointer;
+
+            &:hover {
+                background-color: #ffffff;
+                color: #1163B7;
+            }
+
+            &:disabled {
+                border: 1px solid grey;
+                color: grey;
+            }
         }
     }
 }

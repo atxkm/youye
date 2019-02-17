@@ -39,6 +39,47 @@
     closeBtn.onclick = function() {
       orderBox.style.display = 'none';
     };
+
+    var form = document.querySelector('#form');
+    if (form) {
+      var inputs = form.querySelectorAll('input');
+      var sendBtn = document.querySelector('#sendBtn');
+
+      sendBtn.onclick = function() {
+        sendBtn.setAttribute('disabled', 'disabled');
+        var data = {};
+
+        inputs.forEach(function(input) {
+          data[input.name] = input.value;
+        });
+
+        for (const key in data) {
+          if (data.hasOwnProperty(key)) {
+            const value = data[key];
+            if (!value) {
+              alert('信息填写不完整，请检查确认后重新发送');
+              sendBtn.removeAttribute('disabled');
+              return;
+            }
+          }
+        }
+
+        var xhr = new XMLHttpRequest();
+        var url = 'http://116.62.196.72:8756/gunsApi/sendEmail';
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            var res = xhr.responseText;
+            if (res.code == 2000) {
+              alert('提交成功');
+              sendBtn.removeAttribute('disabled');
+            }
+          }
+        };
+        xhr.send(JSON.stringify(data));
+      };
+    }
   };
 
 })(document, window);
