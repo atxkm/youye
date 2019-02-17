@@ -16,7 +16,7 @@
         text-align: center;
 
         h1 {
-            padding-top: 63px;
+            padding-top: 147px;
             font-size: 60px;
             color: #FFFFFF;
             line-height: 84px;
@@ -32,245 +32,60 @@
     }
 }
 
-.see {
-    position: relative;
-    height: 777px;
+.way {
+    padding-top: 58px;
 
-    .line {
-        width: 60px;
-        height: 1px;
-        margin-top: 46px;
-        background: #D9B765;
+    ul li+li, ul+.item {
+        margin-top: 40px;
     }
 
-    .img {
-        position: absolute;
-        top: 535px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+    .item {
+        width: 646px;
+        height: 338px;
+        margin: 0 auto;
+        box-shadow: 0 5px 12px 0 rgba(0, 24, 77, 0.10);
+        letter-spacing: 2.19px;
 
-    .text {
-        overflow: hidden;
-        width: 672px;
-        margin-top: 43px;
-        padding: 0 26px;
-
-        .desc {
-            height: 388px;
-            margin-top: 26px;
-            font-size: 26px;
+        .title {
+            margin-left: 24px;
+            padding-top: 29px;
+            font-size: 28px;
             color: #303133;
-            letter-spacing: 0.83px;
-            line-height: 42px;
         }
-    }
 
-    .line-y {
-        width: 1px;
-        height: 60px;
-        margin-top: 217px;
-        margin-left: 374px;
-        background: #D9B765;
-    }
-}
-
-.team {
-    padding: 37px 0 112px;
-
-    .title {
-        text-align: center;
-    }
-
-    ul {
-        overflow: hidden;
-        padding: 36px 26px 0;
-
-        li {
-            position: relative;
-            float: left;
-            width: 50%;
-
-            img {
-                display: none;
-                width: 100%;
-                height: 360px;
-
-                &:nth-child(2) {
-                    display: block;
-                }
-            }
-
-            .info {
-                position: absolute;
-                bottom: 24px;
-                left: 0;
-                overflow: hidden;
-                width: 100%;
-                max-height: 100px;
-                text-align: center;
-                color: #FFFFFF;
-                transition: max-height .3s;
-
-                .name {
-                    font-size: 28px;
-                    letter-spacing: 1.35px;
-                    line-height: 40px;
-
-                    small {
-                        vertical-align: bottom;
-                        font-size: 24px;
-                        letter-spacing: 1.35px;
-                    }
-                }
-
-                .desc {
-                    margin-top: 17px;
-                    font-size: 24px;
-                    letter-spacing: 1.48px;
-                }
-            }
-
-            .detail {
-                visibility: hidden;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                font-size: 22px;
-                color: #FFFFFF;
-                letter-spacing: 1.54px;
-                line-height: 22px;
-                background-color: rgba(0, 0, 0, .6);
-
-                p {
-                    position: absolute;
-                    left: 0;
-                    bottom: 32px;
-                    overflow: hidden;
-                    box-sizing: border-box;
-                    width: 100%;
-                    max-height: 0;
-                    padding: 0 16px;
-
-                    span {
-                        display: block;
-                        margin-top: 14px;
-                    }
-                }
-
-            }
-
-            &:hover {
-                .info {
-                    max-height: 0;
-                    transition: max-height .1s;
-                }
-
-                .detail {
-                    visibility: visible;
-
-                    p {
-                        max-height: 280px;
-                        transition: max-height .3s;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.belief {
-    padding-bottom: 40px;
-    background: #F6F6F6;
-    text-align: center;
-
-    .left {
-        padding-top: 162px;
-
-        li {
-            margin-bottom: 37px;
-            line-height: 37px;
-            letter-spacing: 0.66px;
-            font-size: 26px;
-
-            div:nth-child(1) {
-                color: #303133;
-            }
-
-            div:nth-child(2) {
-                color: #00003F;
-            }
-        }
-    }
-
-    .right {
-        position: absolute;
-        top: 58px;
-        left: 0;
-        width: 100%;
-    }
-
-    .line {
-        position: absolute;
-        top: -52px;
-        left: 50%;
-        width: 60px;
-        height: 1px;
-        margin-left: -30px;
-        background: #D9B765;
-    }
-}
-
-.line-l {
-    width: 1px;
-    height: 60px;
-    margin: 39px 0 0 374px;
-    background: #D9B765;
-}
-
-.partner {
-    padding: 0 0 104px;
-
-    .title {
-        margin-top: 54px;
-        text-align: center;
-    }
-
-    .desc {
-        position: relative;
-        margin-top: 36px;
-        font-size: 0;
-        text-align: center;
-
-        &::before {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            z-index: -1;
-            width: 100%;
+        .line {
+            margin-top: 15px;
+            width: 111px;
             height: 1px;
-            background-color: #DCDFE6;
-            content: '';
+            margin-left: -8px;
+            background: #D9B765;
         }
 
-        div {
-            display: inline-block;
-            padding: 0 30px;
-            background-color: #ffffff;
-            font-size: 26px;
-            color: #303133;
-            letter-spacing: 1.98px;
-        }
-    }
+        .data {
+            margin-top: 24px;
+            padding-left: 24px;
+            font-size: 0;
 
-    ul {
-        li {
-            width: 260px;
-            height: 120px;
-            margin: 40px auto 0;
-            box-shadow: 0 2px 6px 0 rgba(0, 24, 77, 0.10);
+            .name {
+                font-size: 26px;
+                color: #909399;
+            }
+
+            .text {
+                display: inline-block;
+                width: 405px;
+                vertical-align: top;
+                font-size: 26px;
+                color: #000015;
+            }
         }
     }
+}
+
+.line-x {
+    display: block;
+    width: 140px;
+    height: 1px;
+    margin: 69px auto 0;
+    background: #D9B765;
 }
