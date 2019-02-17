@@ -185,7 +185,7 @@
 .line-x {
     width: 360px;
     height: 1px;
-    margin: 110px auto 0;
+    margin: 0 auto;
     background: #D9B765;
 }
 
@@ -203,15 +203,15 @@
             width: 25%;
 
             .img {
-                height: 60px;
+                height: 80px;
             }
 
             .name {
-                margin-top: 25px;
+                margin-top: 10px;
                 font-size: 18px;
                 color: #303133;
                 letter-spacing: 0.57px;
-                line-height: 30px;
+                line-height: 22px;
             }
         }
     }
