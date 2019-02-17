@@ -15,14 +15,12 @@ header {
         float: right;
         box-sizing: border-box;
         height: 100%;
-        padding-top: 17px;
         padding-right: 30px;
 
         li {
             float: left;
             box-sizing: border-box;
             width: 104px;
-            height: 100%;
             text-align: center;
         }
 
@@ -31,13 +29,16 @@ header {
         }
 
         a {
-            line-height: 28px;
+            display: block;
+            line-height: 62px;
+            font-size: 14px;
             color: #303133;
         }
 
         .calculator {
             width: 168px;
             margin-left: 42px;
+            margin-top: 16px;
 
             a {
                 display: block;
@@ -81,8 +82,8 @@ header {
 }
 
 .about .about, .platform .platform, .apply .apply, .information .information, .contact .contact-a {
-    border-bottom: 2px solid #1163B7;
     a {
+        border-bottom: 2px solid #1163B7;
         color: #1566B8;
     }
 }

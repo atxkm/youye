@@ -29,13 +29,13 @@ fis.match('*.ts', {
   rExt: '.js'
 });
 
-fis.match('*.{js,css,ts,scss}', {
-  useHash: true
-});
+// fis.match('*.{js,css,ts,scss}', {
+//   useHash: true
+// });
 
-fis.match('::image', {
-  useHash: true
-});
+// fis.match('::image', {
+//   useHash: true
+// });
 
 // default media is `dev`
 fis.media('prod')

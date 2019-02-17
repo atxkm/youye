@@ -53,9 +53,9 @@
           data[input.name] = input.value;
         });
 
-        for (const key in data) {
+        for (var key in data) {
           if (data.hasOwnProperty(key)) {
-            const value = data[key];
+            var value = data[key];
             if (!value) {
               alert('信息填写不完整，请检查确认后重新发送');
               sendBtn.removeAttribute('disabled');
