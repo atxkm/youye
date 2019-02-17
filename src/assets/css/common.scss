@@ -1,4 +1,8 @@
-ul, li, p, hr, input {
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "Hiragino Sans GB", "Heiti SC", sans-serif;
+}
+
+ul, li, p, hr, input, h1, h2 {
     margin: 0;
     padding: 0;
 }
@@ -22,4 +26,85 @@ i {
 .box {
     width: 890px;
     margin: 0 auto;
+}
+
+.more {
+    font-size: 0;
+
+    a {
+        display: inline-block;
+        padding-left: 23px;
+        font-size: 14px;
+        color: #1063B7;
+        letter-spacing: 0.44px;
+        background: url(../img/arrow-right.png) no-repeat left center;
+
+        &:hover {
+            background-position: 4px center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .box {
+        width: auto;
+    }
+
+    .more {
+        a {
+            // padding: 19px 0 19px 32px;
+            padding-left: 32px;
+            font-size: 30px;
+            line-height: normal;
+            letter-spacing: 0.83px;
+            background: url(../img/m/arrow-right.png) no-repeat left center;
+
+            &:hover {
+                background-position: left center;
+            }
+        }
+
+    }
+}
+
+.order-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+
+    .box {
+        padding: 6px 0 245px;
+        background-color: #ffffff;
+
+        .close {
+            float: right;
+        }
+
+        ul {
+            margin-top: 94px;
+            padding-left: 26px;
+            box-shadow: 0 5px 8px 0 rgba(0, 24, 77, 0.10);
+
+            li {
+                line-height: 83px;
+                font-size: 28px;
+                color: #303133;
+                letter-spacing: 2.36px;
+            }
+
+            li+li {
+                border-top: 1px solid #E4E7ED;
+            }
+
+            .concat {
+                color: #1163B7;
+            }
+        }
+    }
 }

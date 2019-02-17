@@ -26,4 +26,19 @@
       alert('您的浏览器太老啦，请更新后再来吧~')
     }
   }
+
+  win.onload = function() {
+    var orderBtn = document.querySelector('#orderBtn');
+    var closeBtn = document.querySelector('#closeBtn');
+    var orderBox = document.querySelector('#orderBox');
+
+    orderBtn.onclick = function() {
+      orderBox.style.display = 'block';
+    };
+
+    closeBtn.onclick = function() {
+      orderBox.style.display = 'none';
+    };
+  };
+
 })(document, window);
