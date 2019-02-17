@@ -1,9 +1,32 @@
 <link rel="stylesheet" href="./header.scss">
-<header class="header">
-  <h1>我是头部</h1>
-  <p>
-    注意此架构没有命名空间隔离，所以css和js注意命名的全局污染
-  </p>
+
+<header>
+  <div class="logo">
+    <a href="/"><img src="../../assets/img/logo.png"></a>
+    <a href="/"><img src="../../assets/img/m/logo.png"></a>
+  </div>
+  <ul class="nav">
+    <li class="index"><a href="/">首页</a></li>
+    <li class="about"><a href="/pages/about/about.html">关于我们</a></li>
+    <li class="platform"><a href="./index.html">平台</a></li>
+    <li class="apply"><a href="./index.html">应用</a></li>
+    <li class="information"><a href="./index.html">资讯</a></li>
+    <li class="contact-a"><a href="./index.html">联系我们</a></li>
+    <li class="calculator"><a href="./index.html"></a></li>
+    <li class="order" id="orderBtn"><img src="../../assets/img/m/order.png"></li>
+  </ul>
 </header>
 
-<script src="./header.ts"></script>
+<div class="order-box" id="orderBox">
+  <div class="box">
+    <img src="../../assets/img/m/close.png" class="close" id="closeBtn">
+    <ul>
+      <li><a href="/">首页</a></li>
+      <li><a href="/pages/about/about.html">关于我们</a></li>
+      <li>平台</li>
+      <li>应用</li>
+      <li>咨询</li>
+      <li class="concat">联系我们</li>
+    </ul>
+  </div>
+</div>
